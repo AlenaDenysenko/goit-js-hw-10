@@ -44,6 +44,7 @@ startButton.addEventListener('click', () => {
     return;
   }
 
+  dateTimePicker.disabled = true;
   startButton.disabled = true;
   updateTimeDisplay(timeLeft);
 
@@ -59,6 +60,7 @@ startButton.addEventListener('click', () => {
         message: 'Countdown finished!'
       });
       startButton.disabled = false;
+      dateTimePicker.disabled = false;
       return;
     }
 
